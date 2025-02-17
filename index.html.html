@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krishna - Portfolio</title>
+    <!--nav bar mean navigitation bar jisme hum kuch bhi change ker sakte h jiese ki naam usme color uski height uska widht or usme ul bhi set kerke chnage ker sakte h uska bhi sab chnage ker sakte h-->
+    <!--or appne neech jo * or (.) lagaya h n vo sirf ek curky bracket ko open kerne ke liye h or kn just for understanding-->
+    <style>/*css*/
+        * {
+            margin : 0;
+            padding : 0;
+        }
+        
+        /*yha apnne apne plateform ka back color diya h background color comment se */
+        body{
+            background-color: rgb(5, 10, 60);
+            color : white;
+        }
+        
+        /*yha apnne navigitation bar set kiys jissse ki apn kuch bhi aatractive bna sakte h or jesa mn vesa chhezo ko set ker sakte h isme sab kuch set ker sakte h */
+        nav{
+            display: flex;  
+            justify-content: space-around;
+            align-items: center;
+            height: 30px;
+            background-color: rgb(14, 14, 117);
+        }
+        
+        /*ul mean unorder list*/
+        nav ul{
+            display: flex;  
+            justify-content:center;
+        }
+        
+        /*yha apppne ul ke ander li ko set kiya or modify kiya h in sab mai apn sab kuch change ker sakte h nav ki comment se color , width,size, shape ,etc*/
+        nav ul li{
+            list-style: none;
+            margin: 0 26px;
+        }
+
+        /*yha apppne ul ke ander li ko or a naam ka ek neeche comment bnaya h usko set kiya or modify kiya h */
+        nav ul li a{
+            text-transform: none;
+            color: white;
+        }
+
+        /*yha jo ul ,li,a ke ander ho apne ne hover laga ya h na uska use koi comment ko color kerna or just seconds mai chnage kerna hota h ex home,about*/
+        /* rem ka ka words ki size chnage kerne ke liye rheta h bs */
+        nav ul li a:hover{
+          color: rgb(114, 114, 210);
+          font-size: 1.08rem;
+        }
+
+        /*iska use yha jo left side mai jo writing work h n protfolio ka hi sirf or kn uski font-size ke liye kiya h */
+        .left{
+            font-size: 2rem;
+        }
+
+        /*yha jo apne ne main mai first section diya h n uska pura modification h */
+        .firstsection{
+            display: flex;
+            justify-content: space-around;
+            margin: 3%;
+        }
+
+        /*yha first-section ke ander jo div section usko modify kiya h */
+        .firstsection > div{
+         width: 30%;
+        }
+
+        /*yha left-section ka jo main writting work h sirf vohi change hoga baki kn uska color size jo bhi h vo sab kuch */
+        .leftsection{
+            text-align: left;
+            width: 34px;
+            font-size:3rem;
+            margin: 70px;
+        }
+        
+        /*yha sirf right section mai changes ho sakta h */
+        .Rightsection{
+          width: 30%;
+        }
+        
+        /*yha sirf right-section mai jo img h sirf usme changes hoge*/
+        .Rightsection img{
+            width: 80%;
+            height: 350px;
+        }
+        
+        /*yha main class ke ander ka h span class ka*/
+        .purple{
+            color: blueviolet;
+        }
+       .element{
+        color: black;
+       }
+       /* Style for Certificate image */
+.certificate {
+    width: 40%;  /* Set the width to 80% of its container. You can adjust this value as needed */
+    height: 350px; /* Automatically adjust the height to maintain the aspect ratio */
+    display: block; /* Ensures it behaves like a block element */
+    margin: 10px auto; /* Center the image horizontally and add 20px margin on top/bottom */
+    border: 1px solid #ccc; /* Optional: Add a border around the certificate for a better look */
+    border-radius: 10px; /* Optional: Rounded corners for the certificate */
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class = "Left Click">Krishna's Porfolio</div>
+            <div class = "Right Click"></div>
+            <ul><!--Un mean unorder list-->
+                <li><a href="/">Home</a></li>    <!--Li mean List item-->
+                <li><a href="/">About</a></li>
+                <li><a href="/">Contact Me</a></li>
+                </ul>
+                </nav>
+    </header>
+    <main>
+        <section class = "firstsection">
+            <div class = "leftsection">
+                Hi,My name is <span class= "purple">Krishna Patil </span>
+                 <div>and I am a </div>
+                 <span id="element"></span>
+                 </div>
+                <div class = "Rightsection">
+                    <img src="C:\Users\krish\OneDrive\Pictures\WhatsApp Image 2024-12-07 at 00.37.30_3525a47d.jpg">
+                </div>
+                </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    
+  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+        strings: ['Web Developer'],
+      typeSpeed: 50,
+    });
+  </script>
+  <style> 
+    .certificate{
+        width: 30%;
+        height: 350px;
+    }
+  </style>
+<!-- Bio Data Section -->
+
+<center><h1><u><b>My Profile</b></u></h1></center><hr>
+<p><b>Name</b>: Krishna Patil</p>
+<p><b>D.O.B</b>: 01/05/2006</p>
+<p><b>Email Address</b>: Krishnapatil50604@gmail.com</p>
+<p><b>Contact No</b>: 9021******</p>
+<p><b>Qualification</b>: 12th pass</p><br>
+
+<h3 style="color:rgb(177, 203, 49);">EDUCATIONAL INFO</h3>
+<table border="1px">
+  <tr>
+    <th>Educational Qualification</th>
+    <th>Marks</th>
+    <th>Institution Name</th>
+  </tr>
+  <tr>
+    <td>10th passed</td>
+    <td>84%</td>
+    <td>St Theresa HR Sec School</td>
+  </tr>
+  <tr>
+    <td>12th passed</td>
+    <td>89%</td>
+    <td>St Theresa HR Sec School</td>
+  </tr>
+</table>
+
+<h3 style="color:rgb(178, 170, 52);">Personal Skills</h3>
+<p>I like coding and playing chess.</p><br>
+
+<h3 style="color:rgb(179, 184, 79);">About Me</h3>
+<p>My name is Krishna Patil. I live in Madhya Pradesh, Burhanpur. I am in the first year of my B-Tech at Pimpri Chinchwad University.</p>
+<p>I am very punctual and always strive to complete my tasks on time.</p><br>
+
+<h3 style="color:rgb(178, 180, 44);"> My Certificate </h3>
+<!-- Corrected the image size here -->
+<img src="C:\Users\krish\OneDrive\Pictures\Screenshots\Screenshot 2025-01-25 183833.png" class="certificate" alt="Certificate">
+
+
+    <> 
+        
+        
+
+</body>
+</html>
